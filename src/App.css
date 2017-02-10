@@ -1,24 +1,91 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
-
 .App-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 }
-
 .App-intro {
   font-size: large;
 }
-
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+header, nav{
+  display: block;
+}
+.Header {
+  background: linear-gradient(to bottom, black 0%, transparent 100%);
+display: flex;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  z-index: 5;
+}
+ul {
+  list-style: none; /*remove the period in list*/
+}
+.Logo {
+  width: 151px;/*width of pic*/
+  height: 41px;/*height of pic*/
+}
+.Logo svg {
+  transform: scale(0.6);
+  transform-origin: 0 0;
+}
+.Logo:hover svg path {
+  fill: #005ce6 !important;
+}
+.Navigation ul {
+  display: flex;
+  height: 25px;
+  align-items: center;
+  padding: 50 10px;
+}
+.Navigation ul li {
+  font-weight: 400;
+  padding: 7px 10px;/* top and bot vs left and right*/
+  font-size: 14px;
+  border-radius: 23px;/*make rounded buttons*/
+}
+.Navigation ul li:hover {
+  background: #e50914;
+  cursor: pointer;
+}
+.Search {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  -webkit-justify-content: center;
+ }
+.Search input {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  height: 40px;/*height of serach box*/
+  width: 20%;
+  background: transparent;
+  color: #ffffff;
+  border: 0;
+  border: 2px solid gray;
+  outline: none;/*get rid of box outline */
+  border-radius: 40px;
+  padding: 0 10px;
+  pointer-events: all;
+  
+  transition: border .25s ease, width .125s ease .125s;/*tranisitions the border so that it looks smooth */
+}
+.Search input:focus {
+  border: 2px solid #e50914;
+  width: 25%;/*controls the width of box after u click on the search bar it widens*/
+}
+
