@@ -88,4 +88,33 @@ ul {
   border: 2px solid #e50914;
   width: 25%;/*controls the width of box after u click on the search bar it widens*/
 }
+.UserProfile {
+  margin-left: auto;
+}/*push display picture to the right*/
 
+.UserProfile .User {
+  display: flex;
+}
+/* make sure profile image to fit*/
+.UserProfile .User .image {
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+   overflow: hidden; /*set up dimensions of image box*/
+}
+.UserProfile .User .image img {
+  width: 100%;/*determine size of picture fit into box*/
+  display: block;
+}
+.UserProfile .User .name {
+  display: flex;
+  font-size: 14px;
+  height: 44px;
+  padding:10px;
+}
+.UserProfile .User:hover {
+  cursor: pointer;/*if u hover over image*/
+}
+.UserProfile .User:hover .image {
+  border: 1px solid #e50914;
+}
