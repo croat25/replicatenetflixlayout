@@ -21,7 +21,7 @@ var App=React.createClass({
 
    handleChange : function(e){
       this.setState({searchTerm : e.target.value});    
-  },render: function() {
+  },render() {
     return (
       <div>
         <header className="Header">
@@ -42,7 +42,7 @@ var App=React.createClass({
 //Profile
 
 var UserProfile = React.createClass({
-  render: function() {
+  render () {
     return (
       <div className="UserProfile">
         <div className="User">
@@ -56,7 +56,7 @@ var UserProfile = React.createClass({
 
 
 var Navigation = React.createClass({
-  render: function() {
+  render () {
     return (
       <div id="navigation" className="Navigation">
         <nav>
